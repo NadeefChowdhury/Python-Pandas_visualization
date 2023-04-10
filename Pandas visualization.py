@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[43]:
-
-
 #import pandas and matplotlib
 #read the csv file as a dataframe called songs(we willw work on only the first 100 values)
 import pandas as pd
@@ -25,45 +19,5 @@ songs2.plot.hist(x='Energy', y='Danceability',alpha=0.5, bins=20)
 
 #create a kde plot of liveness
 songs2['Liveness'].plot.kde()
-
-
-# In[13]:
-
-
-
-
-
-# In[34]:
-
-
-#create a valence vs energy scatter plot. set the color to red
-songs2.plot.scatter(x='Energy', y='Valence', c='red')
-
-
-# In[39]:
-
-
-
-
-
-# In[38]:
-
-
-#create a danceability vs energy histogram and set the style to ggplot.
-#set the visibility to 0.5 and increase the number of bins to 20
-plt.style.use('ggplot')
-songs2.plot.hist(x='Energy', y='Danceability',alpha=0.5, bins=20)
-
-
-# In[44]:
-
-
-#create a kde plot of liveness
-songs2['Liveness'].plot.kde()
-
-
-# In[ ]:
-
-
 
 
