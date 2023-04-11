@@ -10,7 +10,7 @@ songs2 = songs.head(100)
 songs2.plot.scatter(x='Energy', y='Valence', c='red')
 
 #create a histogram of Danceability
-songs2['Danceability'].plot.hist()
+songs2['Danceability'].hist()
 
 #create a danceability vs energy histogram and set the style to ggplot.
 #set the visibility to 0.5 and increase the number of bins to 20
